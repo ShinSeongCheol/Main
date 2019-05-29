@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main</title>
+    <meta charset="utf-8">
+    <style>
+      * {
+        margin:0px;
+        padding:0px;
+      }
+    body {
+        background-image:url("https://github.com/Ongeolin/Web/blob/master/image/viktor-forgacs-1530149-unsplash.jpg?raw=true");
+        background-size:100%;
+        position: fixed;
+      }
+    .sideBar {
+        position:absolute;
+        display:inline;
+        top:420px;
+        left:60px;
+      }
+    .sideBar button{
+      border:none;
+      font-size:50px;
+      margin:20px;
+      padding:12px;
+      min-width: 180px
+    }
+    .sideBarContents {
+      display:none;
+      position:absolute;
+    }
+    .sideBarContents a {
+      color:black;
+      display:block;
+    }
+    .sideBar button:hover .sideBarContents {
+      display:block;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="sideBar">
+      <button>Study</button>
+        <div class="sideBarContents">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+      <button>Song</button>
+        <div class="sideBarContents">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+      <button>Guitar</button>
+        <div class="sideBarContents">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+    </div>
+  </body>
+</html>
