@@ -28,37 +28,62 @@
     }
     .sideBarContents {
       display:none;
+      position:fixed;
+      left:261px;
+    }
+    .sideBarContentsTop {
       position:absolute;
+      top:-102px;
+      background-color:white;
+      min-width:180px;
+      border:1px solid black;
+    }
+    .sideBarContentsTop a {
+      text-decoration:none;
+      font-size:12px;
     }
     .sideBarContents a {
       color:black;
       display:block;
     }
-    .sideBar button:hover .sideBarContents {
+    .sideBarContents a:hover {
+      background-color:red;
+    }
+    .sideBar:hover .sideBarContents {
       display:block;
     }
+
     </style>
   </head>
   <body>
     <div class="sideBar">
       <button>Study</button>
         <div class="sideBarContents">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
+          <div class="sideBarContentsTop">
+            <a href="#">English</a>
+            <a href="#">Japanise</a>
+            <a href="#">HTML</a>
+            <a href="#">CSS</a>
+            <a href="#">JavaScript</a>
+            <a href="#">C++</a>
+          </div>
         </div>
       <button>Song</button>
         <div class="sideBarContents">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
+          <div class="sideBarContentsTop">
+            <a href="#">America Song</a>
+            <a href="#">Japan Song</a>
+            <a href="#">Korean Song</a>
+          </div>
         </div>
       <button>Guitar</button>
         <div class="sideBarContents">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
+          <div class="sideBarContentsTop">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+          </div>
         </div>
-    </div>
+      </div>
   </body>
 </html>
