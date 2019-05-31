@@ -13,10 +13,9 @@
         background-size:1980px 1080px;
         max-width:1980px;
         max-height:1080px;
-        position: fixed;
       }
     .sideBar {
-        position:absolute;
+        position:fixed;
         display:inline;
         top:420px;
         left:60px;
@@ -61,23 +60,31 @@
     .sideBar:hover .sideBarContents {
       display:block;
     }
-
+    .footer {
+      position:fixed;
+      background-color:white;
+      text-align:center;
+      width:100%;
+      bottom:0px;
+      border-top:1px solid black;
+    }
+    .contact {
+      font-size:40px;
+    }
     </style>
   </head>
   <body>
     <div class="sideBar">
-      <button class="button">Study</button>
+      <button class="button">Study</button><br>
         <div class="sideBarContents">
           <div class="sideBarContentsTop">
-            <a href="#">English</a>
-            <a href="#">Japanese</a>
             <a href="#">HTML</a>
             <a href="#">CSS</a>
             <a href="#">JavaScript</a>
             <a href="#">C++</a>
           </div>
         </div>
-      <button class="button">Song</button>
+      <button class="button">Song</button><br>
         <div class="sideBarContents">
           <div class="sideBarContentsTop">
             <a href="englishSong.html">English Song</a>
@@ -85,7 +92,7 @@
             <a href="#">Korean Song</a>
           </div>
         </div>
-      <button class="button">Guitar</button>
+      <button class="button">Guitar</button><br>
         <div class="sideBarContents">
           <div class="sideBarContentsTop">
             <a href="#">1</a>
@@ -93,6 +100,10 @@
             <a href="#">3</a>
           </div>
         </div>
+      </div>
+      <div class="footer">
+        <p class="contact">Contact</p>
+        <p>Email:cher3725@naver.com</p>
       </div>
   </body>
 </html>
