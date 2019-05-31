@@ -20,11 +20,18 @@
         left:60px;
       }
     .sideBar button{
-      border:none;
+      border-radius: 20px;
+      border-style:solid;
       font-size:50px;
       margin:20px;
       padding:12px;
       min-width: 180px
+    }
+    button {
+      background-color:white;
+    }
+    button:hover {
+      background-color:gray;
     }
     .sideBarContents {
       display:none;
@@ -57,7 +64,7 @@
   </head>
   <body>
     <div class="sideBar">
-      <button>Study</button>
+      <button class="button">Study</button>
         <div class="sideBarContents">
           <div class="sideBarContentsTop">
             <a href="#">English</a>
@@ -68,7 +75,7 @@
             <a href="#">C++</a>
           </div>
         </div>
-      <button>Song</button>
+      <button class="button">Song</button>
         <div class="sideBarContents">
           <div class="sideBarContentsTop">
             <a href="englishSong.html">English Song</a>
@@ -76,7 +83,7 @@
             <a href="#">Korean Song</a>
           </div>
         </div>
-      <button>Guitar</button>
+      <button class="button">Guitar</button>
         <div class="sideBarContents">
           <div class="sideBarContentsTop">
             <a href="#">1</a>
