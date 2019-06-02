@@ -10,22 +10,17 @@
         overflow-y: none;
       }
     body {
+      background-image: url(https://github.com/Ongeolin/Main/blob/master/image/viktor-forgacs-1530149-unsplash.jpg?raw=true);
+      background-size: cover;
       }
-      .sector {
-      }
-      .backgroundImage {
-        width:100%;
-      }
-      .backgroundImage img {
-        width:100%;
-        overflow:none;
-      }
+
     .sideBar {
         position:fixed;
         display:inline;
         bottom:185px;
         left:60px;
       }
+
     .sideBar button{
       border-radius: 20px;
       border-style:solid;
@@ -34,37 +29,25 @@
       padding:12px;
       min-width: 180px
     }
+
     button {
       background-color:white;
     }
+
     button:hover {
       background-color:gray;
     }
-    .sideBarContents {
-      display:none;
-      position:fixed;
-      left:261px;
-    }
-    .sideBarContentsTop {
-      position:absolute;
-      top:-102px;
-      background-color:white;
-      min-width:180px;
-      border:1px solid black;
-    }
-    .sideBarContentsTop a {
+
+    a {
       text-decoration:none;
-      font-size:12px;
     }
-    .sideBarContents a {
+
+    a:visited {
       color:black;
-      display:block;
     }
-    .sideBarContents a:hover {
-      background-color:red;
-    }
-    .sideBar:hover .sideBarContents {
-      display:block;
+
+    a:active {
+      color:red;
     }
     .footer {
       position:fixed;
@@ -74,45 +57,22 @@
       width:100%;
       border-top:2px solid black;
     }
+
     .contact {
       font-size:40px;
       text-decoration: underline;
       text-decoration-color: blue;
       text-shadow: 2px 2px 2px;
     }
+
     </style>
   </head>
   <body>
-    <div class="sector">
-      <div class="backgroundImage">
-        <img src="https://github.com/Ongeolin/Main/blob/master/image/viktor-forgacs-1530149-unsplash.jpg?raw=true">
-      </div>
+    <div>
       <div class="sideBar">
-        <button class="button">Study</button><br>
-          <div class="sideBarContents">
-            <div class="sideBarContentsTop">
-              <a href="#">HTML</a>
-              <a href="#">CSS</a>
-              <a href="#">JavaScript</a>
-              <a href="#">C++</a>
-            </div>
-          </div>
-          <button class="button">Song</button><br>
-          <div class="sideBarContents">
-            <div class="sideBarContentsTop">
-              <a href="englishSong.html">English Song</a>
-              <a href="#">Japanese Song</a>
-              <a href="#">Korean Song</a>
-            </div>
-          </div>
-        <button class="button">Guitar</button><br>
-          <div class="sideBarContents">
-            <div class="sideBarContentsTop">
-              <a href="#">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-            </div>
-          </div>
+        <button class="button"><a >Study</a></button><br>
+        <button class="button"><a href="englishSong.html">Song</a></button><br>
+        <button class="button"><a >Hobby</a></button><br>
         </div>
         <div class="footer">
           <p class="contact">Contact</p>
