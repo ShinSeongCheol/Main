@@ -7,7 +7,6 @@
       * {
         margin:0px;
         padding:0px;
-        overflow-y: none;
       }
     body {
       background-image: url(https://github.com/Ongeolin/Main/blob/master/image/viktor-forgacs-1530149-unsplash.jpg?raw=true);
@@ -15,9 +14,9 @@
       }
 
     .sideBar {
-        position:fixed;
+        position:relative;
         display:inline;
-        bottom:185px;
+        top:400px;
         left:60px;
       }
 
@@ -60,24 +59,56 @@
 
     .contact {
       font-size:40px;
-      text-decoration: underline;
       text-decoration-color: blue;
       text-shadow: 2px 2px 2px;
     }
 
+    .timeBox {
+      display:block;
+      position:relative;
+      float:right;
+      left:-50%;
+      top:200px;
+    }
+    .time {
+      position:relative;
+      float:left;
+      left:50%;
+      border:5px dashed black;
+      border-radius:30px;
+      background-color:#6d6363;
+      max-width:400px;
+    }
+    .time p{
+      text-align:center;
+      font-size:20px;
+    }
+    .time p:first-child {
+      font-size:155px;
+      color:white;
+      text-shadow:4px 3px 13px;
+    }
     </style>
   </head>
   <body>
-    <div>
+    <div class="component">
+      <div class="timeBox">
+        <div class="time">
+          <p>11:31</p>
+          <p>2019-06-03</p>
+          <p>Friday</p>
+        </div>
+      </div>
+      <br>
       <div class="sideBar">
         <button class="button"><a >Study</a></button><br>
         <button class="button"><a href="englishSong.html">Song</a></button><br>
         <button class="button"><a >Hobby</a></button><br>
-        </div>
-        <div class="footer">
+      </div>
+      <div class="footer">
           <p class="contact">Contact</p>
           <p>Email:cher3725@naver.com</p>
-        </div>
       </div>
-    </body>
+    </div>
+  </body>
 </html>
