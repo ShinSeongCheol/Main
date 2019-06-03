@@ -4,6 +4,7 @@
     <title>Main</title>
     <meta charset="utf-8">
     <style>
+
       * {
         margin:0px;
         padding:0px;
@@ -11,6 +12,7 @@
     body {
       background-image: url(https://github.com/Ongeolin/Main/blob/master/image/viktor-forgacs-1530149-unsplash.jpg?raw=true);
       background-size: cover;
+      overflow:hidden;
       }
 
     .sideBar {
@@ -49,12 +51,13 @@
       color:red;
     }
     .footer {
-      position:fixed;
+      position:absolute;
       bottom:0px;
       background-color:white;
       text-align:center;
       width:100%;
       border-top:2px solid black;
+      opacity:0.7;
     }
 
     .contact {
@@ -76,7 +79,7 @@
       left:50%;
       border:5px dashed black;
       border-radius:30px;
-      background-color:#6d6363;
+      background-color:gray;
       max-width:400px;
     }
     .time p{
@@ -94,9 +97,17 @@
     <div class="component">
       <div class="timeBox">
         <div class="time">
-          <p>11:31</p>
+          <p id="AA2">11:31</p>
           <p>2019-06-03</p>
           <p>Friday</p>
+          <script>
+            var date = new Date();
+            var weeks = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
+            var str = document.getElementsByTagName('p');
+            str[0].innerHTML = date.getHours() +":"+ date.getMinutes();
+            str[1].innerHTML = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
+            str[2].innerHTML = weeks[date.getDay()];
+          </script>
         </div>
       </div>
       <br>
