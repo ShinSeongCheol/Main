@@ -89,28 +89,31 @@
       text-shadow:4px 3px 13px;
     }
     </style>
+    <script>
+    function printClock(){
+      var date = new Date();
+      var weeks = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
+      var str = document.getElementsByTagName('p');
+      str[0].innerHTML = date.getHours() +":"+ date.getMinutes();
+      str[1].innerHTML = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
+      str[2].innerHTML = weeks[date.getDay()];
+    }
+      setTimeout(printClock,1000);
+    </script>
   </head>
   <body>
     <div class="component">
       <div class="timeBox">
         <div class="time">
-          <p id="AA2">11:31</p>
-          <p>2019-06-03</p>
-          <p>Friday</p>
-          <script>
-            var date = new Date();
-            var weeks = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
-            var str = document.getElementsByTagName('p');
-            str[0].innerHTML = date.getHours() +":"+ date.getMinutes();
-            str[1].innerHTML = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
-            str[2].innerHTML = weeks[date.getDay()];
-          </script>
+          <p></p>
+          <p></p>
+          <p></p>
         </div>
       </div>
       <br>
       <div class="sideBar">
         <button class="button"><a href="study.html">Study</a></button><br>
-        <button class="button"><a href="englishSong.html">Song</a></button><br>
+        <button class="button"><a href="englishSong.html">Music</a></button><br>
         <button class="button"><a >Hobby</a></button><br>
       </div>
       <div class="footer">
