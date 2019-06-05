@@ -95,16 +95,16 @@
       var weeks = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
       var str = document.getElementsByTagName('p');
       str[0].innerHTML = date.getHours() +":"+ date.getMinutes();
-      str[1].innerHTML = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
+      str[1].innerHTML = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getSeconds();
       str[2].innerHTML = weeks[date.getDay()];
     }
-      setTimeout(printClock,1000);
+      setTimeout('printClock()',1000);
     </script>
   </head>
   <body>
     <div class="component">
       <div class="timeBox">
-        <div class="time">
+        <div class="time" onload="printClock()">
           <p></p>
           <p></p>
           <p></p>
