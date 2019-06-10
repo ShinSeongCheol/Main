@@ -84,13 +84,13 @@
       var date = new Date();
       var weeks = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
       var str = document.getElementById("clock");
-      str.innerHTML ="<span style='font-size:200px;color:white;text-shadow:4px 3px 13px'>" + date.getHours() +":"+ date.getMinutes() + "</span><br><span style='text-size:0px;'>" + date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate() + "<br>" + weeks[date.getDay()] + "</span>";
+      str.innerHTML ="<span style='font-size:200px;color:white;text-shadow:4px 3px 13px'>" + date.getHours() +":"+ date.getMinutes() + "</span><br><span style='tont-size:20px;'>" + date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate() + "<br>" + weeks[date.getDay()] + "</span>";
     }
       setTimeout('printClock()',1000);
     </script>
   </head>
   <body>
-    <div class="clockBox" onload="printClock">
+    <div class="clockBox" onload="printClock()">
       <div id="clock">
       </div>
     </div>
