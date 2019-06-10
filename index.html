@@ -65,54 +65,39 @@
       text-decoration-color: blue;
       text-shadow: 2px 2px 2px gray;
     }
-
-    .timeBox {
+    .clockBox {
       display:block;
       position:relative;
+      top:200px;
       float:right;
       left:-50%;
-      top:200px;
     }
-    .time {
+    #clock {
       position:relative;
       float:left;
       left:50%;
-      max-width:400px;
-    }
-    .time p{
       text-align:center;
-      font-size:20px;
-    }
-    .time p:first-child {
-      font-size:200px;
-      color:white;
-      text-shadow:4px 3px 13px;
     }
     </style>
     <script>
     function printClock(){
       var date = new Date();
       var weeks = ["일요일","월요일","화요일","수요일","목요일","금요일","토요일"];
-      var str = document.getElementsByTagName('p');
-      str[0].innerHTML = date.getHours() +":"+ date.getMinutes();
-      str[1].innerHTML = date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate();
-      str[2].innerHTML = weeks[date.getDay()];
+      var str = document.getElementById("clock");
+      str.innerHTML ="<span style='font-size:200px;color:white;text-shadow:4px 3px 13px'>" + date.getHours() +":"+ date.getMinutes() + "</span><br><span style='text-size:0px;'>" + date.getFullYear() + "-" + (date.getMonth()+1) + "-" + date.getDate() + "<br>" + weeks[date.getDay()] + "</span>";
     }
       setTimeout('printClock()',1000);
     </script>
   </head>
   <body>
-    <div class="timeBox">
-      <div class="time" onload="printClock()">
-        <p></p>
-        <p></p>
-        <p></p>
+    <div class="clockBox" onload="printClock">
+      <div id="clock">
       </div>
     </div>
     <br>
     <div class="sideBar">
       <button class="button"><a href="study.html">Study</a></button><br>
-      <button class="button"><a href="englishSong.html">Music</a></button><br>
+      <button class="button"><a href="Music.html">Music</a></button><br>
       <button class="button"><a >Hobby</a></button><br>
     </div>
     <div class="footer">
